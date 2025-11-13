@@ -1,0 +1,34 @@
+ul>((li>ol>((li*4)>ol>li*3)+li))+(li>ol>((li*3)>ol>li*3)+li)>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Danh sách Câu lạc bộ</h2>
+    <ul>
+      <li>THỂ THAO</li>
+      <ol>
+        <li>Bóng đá</li>
+        <li>Bóng chuyền</li>
+        <li>Bóng rổ</li>
+        <li>Võ</li>
+        <ol>
+          <li>Karatedo</li>
+          <li>Taekwondo</li>
+          <li>Vovinam</li>
+        </ol>
+        <li>Bơi</li>
+      </ol>
+      <li>NGHỆ THUẬT</li>
+      <ol>
+        <li>Mĩ thuật</li>
+        <li>Nhiếp ảnh</li>
+        <li>Âm nhạc</li>
+        <ol type="a">
+          <li>Thanh nhạc</li>
+          <li>Piano</li>
+          <li>Violin</li>
+        </ol>
+        <li>Khiêu vũ</li>
+      </ol>
+    </ul>
+  </body>
+</html>
