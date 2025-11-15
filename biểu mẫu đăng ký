@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Biểu mẫu đăng ký</title>
+</head>
+<body>
+<h2>Đăng kí môn thi tốt nghiệp</h2>
+<fieldset>
+<form action="/submit">
+  <label>Họ và tên:</label>
+  <input type="text"><p></p>
+  <label>CCCD:</label>
+  <input type="number"><p></p>
+  <label>Ngày sinh:</label>
+  <input type="date"><p></p>
+  <label name="gioitinh">Giới tính:</label>
+  <input type="radio" name="gioitinh">Nam
+  <input type="radio" name="gioitinh">Nữ<p></p>
+  <label name="monhoc">Môn thi:</label><br>
+  <input type="checkbox" name="monhoc">Toán
+  <input type="checkbox" name="monhoc">Ngữ văn
+  <input type="checkbox" name="monhoc">Ngoại ngữ<p></p>
+  <label name="tohop">Tổ hợp</label>
+  <select name="tohop">
+    <option value="khtn">Khoa học tự nhiên</option>
+    <option value="khxh">Khoa học xã hội</option>
+    <option value="36thanhhoa">36 Thanh Hóa</option>
+    <option value="18namdinh">18 Nam Định</option>
+  </select><br>
+  <p></p>
+  <button type="submit">Gửi thông tin</button>
+  <button type="reset">Làm lại</button>
+</form>
+</fieldset>
+</body>
+</html>
