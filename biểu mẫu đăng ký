@@ -7,31 +7,43 @@
 <body>
 <h2>Đăng kí môn thi tốt nghiệp</h2>
 <fieldset>
-<form action="/submit">
+<form id="login" onsubmit="lgt(event)">
   <label>Họ và tên:</label>
-  <input type="text"><p></p>
+  <input type="text" required><p></p>
+
   <label>CCCD:</label>
-  <input type="number"><p></p>
+  <input type="number" required><p></p>
+
   <label>Ngày sinh:</label>
-  <input type="date"><p></p>
-  <label name="gioitinh">Giới tính:</label>
-  <input type="radio" name="gioitinh">Nam
-  <input type="radio" name="gioitinh">Nữ<p></p>
-  <label name="monhoc">Môn thi:</label><br>
+  <input type="date" required><p></p>
+
+  <label>Giới tính:</label>
+  <input type="radio" name="gioitinh" required>Nam
+  <input type="radio" name="gioitinh" required>Nữ<p></p>
+
+  <label>Môn thi:</label><br>
   <input type="checkbox" name="monhoc">Toán
   <input type="checkbox" name="monhoc">Ngữ văn
   <input type="checkbox" name="monhoc">Ngoại ngữ<p></p>
-  <label name="tohop">Tổ hợp</label>
+
+  <label>Tổ hợp</label>
   <select name="tohop">
     <option value="khtn">Khoa học tự nhiên</option>
     <option value="khxh">Khoa học xã hội</option>
     <option value="36thanhhoa">36 Thanh Hóa</option>
     <option value="18namdinh">18 Nam Định</option>
-  </select><br>
-  <p></p>
+  </select><p></p>
+
   <button type="submit">Gửi thông tin</button>
   <button type="reset">Làm lại</button>
 </form>
 </fieldset>
+<script>
+function lgt(event) {
+    alert("Nộp thông tin thành công!");
+    document.getElementById("login").reset();
+    return false;
+}
+</script>
 </body>
 </html>
